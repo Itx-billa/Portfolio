@@ -1,0 +1,170 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background: #222;
+    border-bottom: 2px solid #0f0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* logo on left, links on right */
+    align-items: center; /* makes logo and links vertically aligned */
+    padding: 10px 20px;
+    background-color: #333; /* your grey/black theme */
+}
+
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0f0;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    /* display: inline-block; */
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #0f0;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70vh;
+    padding: 0 10%;
+    background: #000;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #0f0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0f0;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #1aff1a;
+    transform: scale(1.05);
+}
+
+/* Hero Image */
+.hero-image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+/* Sections */
+main section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-left: 4px solid #0f0;
+    padding-left: 10px;
+    color: #f5f5f5;
+}
+
+/* Paragraphs */
+p {
+    color: #ccc;
+}
+
+/* Lists */
+ul {
+    margin: 10px 0 20px 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    color: #bbb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #888;
+    margin-top: 30px;
+    border-top: 2px solid #0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+}
