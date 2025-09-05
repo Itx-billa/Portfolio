@@ -25,6 +25,78 @@ header {
     z-index: 1000;
 }
 
+/* Navbar */
+header {
+    background: #222;
+    border-bottom: 2px solid #0f0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* logo on left, links on right */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    flex-wrap: wrap; /* ✅ allows wrapping on small screens */
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0f0;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* ✅ stops overflow by wrapping links */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #0f0;
+    transform: scale(1.05);
+}
+
+/* ✅ Mobile fix */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        background: #444;
+        border-radius: 5px;
+    }
+}
+
+
 nav {
     display: flex;
     justify-content: space-between; /* logo on left, links on right */
@@ -168,3 +240,4 @@ footer {
         max-width: 300px;
     }
 }
+
