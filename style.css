@@ -227,7 +227,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
-        flex-direction: column;
+        /* flex-direction: column; */
         text-align: center;
     }
 
@@ -240,4 +240,5 @@ footer {
         max-width: 300px;
     }
 }
+
 
